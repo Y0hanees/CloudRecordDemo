@@ -33,4 +33,8 @@ public class OrderHystirxController {
     public String paymentInfo_TimeOutHandler(Integer id){
         return "我是消费者80，支付系统繁忙请稍后再试，或者自己检查一下自身环境┭┮﹏┭┮";
     }
+    //global fallback
+    public String payment_Global_FallbackMethod(){
+        return "Global异常处理信息，请稍后再试~";
+    }
 }
