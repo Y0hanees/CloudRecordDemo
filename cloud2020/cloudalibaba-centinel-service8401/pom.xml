@@ -9,12 +9,25 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloudalibaba-provider-payment9001</artifactId>
+    <artifactId>cloudalibaba-sentinel-service8401</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.com.atguigu.springcloud.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-com.atguigu.springcloud.alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--     sentinel-datasource-nacos 后续持久化用   -->
+        <dependency>
+            <groupId>com.com.atguigu.springcloud.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.com.atguigu.springcloud.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-com.atguigu.springcloud.alibaba-sentinel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -33,6 +46,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springcloud</groupId>
+            <artifactId>cloud-api-common</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
